@@ -1,0 +1,135 @@
+.datatable-content table{
+    border-collapse:separate; 
+    border-spacing:0 10px; 
+    width: 100%;
+}
+
+.datatable-content table tr td, table tr th{
+    text-align: center;
+    padding: 5px;
+    font-size: 14px;
+    color: #1E1E2D;
+}
+
+.datatable-content table tr th{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.datatable-content table tr td button{
+    transition: all .2s;
+    padding: 5px 5px;
+    border: 0;
+    display: flex;
+    align-items: center;
+}
+
+.datatable-content table tr td button i{
+    font-size: 18px !important;
+}
+
+.datatable-content table tr td button:hover{
+    background-color: #1E1E2D;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.datatable-content table tbody tr{
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0px 4px 0 rgba(82,63,105,.08);
+}
+
+.datatable-content table tr td:first-child { 
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.datatable-content table tr td:last-child{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.datatable-content .toolbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.datatable-content .toolbar .actions-button button{
+    border: 1px solid #87FFD2;
+    padding: 5px 20px;
+    background-color: #87FFD2;
+    color: #1E1E2D;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.datatable-content .toolbar .actions-button button:hover{
+    border: 1px solid #1E1E2D;
+    background-color: #1E1E2D;
+    color: #fff;
+}
+
+.datatable-content .toolbar .actions-button button i{
+    font-size: 17px;
+}
+
+.datatable-content .toolbar .search-content i{
+    position: absolute;
+    left: 5px;
+    bottom: 0;
+    top: 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    color: grey;
+    transition: opacity .3s;
+}
+
+.datatable-content .toolbar .search-content{
+    width: fit-content;
+    position: relative;
+}
+
+.datatable-content .toolbar input{
+    font-size: 13px;
+    width: 220px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #1E1E2D;
+    transition: padding-left .5;
+}
+
+.datatable-content .toolbar input:focus{
+    padding-left: 15px;
+}
+
+.datatable-content .toolbar input:focus ~ i{
+    opacity: 0;
+}
+
+.datatable-content .pagination-content{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.datatable-content .pagination-content button{
+    border: 0;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    transition: all .2s;
+}
+
+.datatable-content .pagination-content button:hover:not(:disabled){
+    background-color: #1E1E2D;
+    color: #fff;
+}

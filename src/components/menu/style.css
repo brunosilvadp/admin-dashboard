@@ -1,0 +1,95 @@
+
+#aside-dashboard {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}  
+
+#aside-dashboard .logo-aside{
+  height: 50px;
+  display: flex;
+  margin: 20px 10px 0 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#menu-dashboard {
+    width: 200px;
+    transition: 0.5s;
+    overflow-x: hidden;
+    padding-top: 20px;
+    white-space: nowrap;
+}
+  
+#menu-dashboard ul li{
+  padding: 8px 0 8px 10px;
+}
+
+#menu-dashboard a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #a2a3b7;
+    width: 100%;
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    transition: all .3s;
+    border-radius: 10px 0 0 10px;
+  }
+
+  #menu-dashboard .menu-title{
+    color: #434d6b;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+
+  #menu-dashboard a:hover {
+    background-color: rgba(242, 243, 248, .5);
+    color: #1E1E2D;
+  }
+  
+  #menu-dashboard ul li a i,
+  #menu-dashboard ul li a span {
+    vertical-align: middle;
+  }
+  
+  #menu-dashboard ul li a i {
+    margin-right: 15px;
+    color: #434d6b;
+    font-size: 20px;
+  }
+  
+  #menu-dashboard ul li .menu-item.active {
+    position: relative;
+    background-color: #f2f3f8;
+    color: #1E1E2D;
+  }
+
+  #menu-dashboard ul li .menu-item.active .corner{
+    display: block;
+  }
+  
+  #menu-dashboard ul li .menu-item .corner {
+    background:#1E1E2D;
+    height:20px;
+    width:20px;    
+    display: none;
+    position: absolute;
+    right: -5px;
+  }
+    
+    #menu-dashboard ul li .menu-item .corner-bottom {
+    bottom: -10px;
+    border-radius: 0px 20px 0px 0px;
+    border-top: 10px solid #f2f3f8;
+    border-right: 5px solid #f2f3f8;
+    }
+    
+    #menu-dashboard ul li .menu-item .corner-top {
+      top: -10px;
+      border-radius: 0px 0px 20px 0px;
+      border-bottom: 10px solid #f2f3f8;
+      border-right: 5px solid #f2f3f8;
+    }
