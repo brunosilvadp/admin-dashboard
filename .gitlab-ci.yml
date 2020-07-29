@@ -28,7 +28,7 @@ deploy:
   tags: 
     - deploy-runner
   script:
-    - echo "Deploy started now"
+    - echo "Deploy started"
     - docker-compose up --build -d
     - docker ps -a
     - echo "Deploy has been finished"
