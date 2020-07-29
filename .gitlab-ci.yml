@@ -16,6 +16,8 @@ before_script:
 
 build_image:
   stage: build
+  tags: 
+    - deploy-runner
   script:
     - docker build -t node .
     - docker tag node:latest bruunoosiilva/gitlab-node-test:latest
