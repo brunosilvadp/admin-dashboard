@@ -1,0 +1,21 @@
+stages:
+  - build
+  - deploy
+
+before_script:
+  - docker login -u $DOCKER_HUB_USERNAME -p $DOCKER_HUB_PASSWORD 
+
+build_image:
+  stage: build
+  script:
+    - docker build -t node .
+    - docker tag node:latest bruunoosiilva/gitlab-node-test:latest
+    - docker push bruunoosiilva/gitlab-node-test:latest
+    
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploy started"
+    - docker-compose -f localhost pull && docker-compose -f localhost up -d
+    - docker ps -a
+    - echo "Deploy has been finished"
