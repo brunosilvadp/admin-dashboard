@@ -19,8 +19,9 @@ build_image:
     
 deploy:
   stage: deploy
+  tags: deploy-runner
   script:
     - echo "Deploy started"
-    - docker-compose -f localhost pull && docker-compose -f localhost up -d
+    - docker-compose up --build -d
     - docker ps -a
     - echo "Deploy has been finished"
