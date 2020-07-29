@@ -19,7 +19,8 @@ build_image:
     
 deploy:
   stage: deploy
-  tags: deploy-runner
+  tags: 
+    - deploy-runner
   script:
     - echo "Deploy started"
     - docker-compose up --build -d
